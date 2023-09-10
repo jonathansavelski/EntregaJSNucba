@@ -1,0 +1,47 @@
+.nav-list a:hover {
+    color: grey;
+}
+
+.overlay {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    z-index: 1;
+    display: none;
+    top: 0;
+    left: 0;
+    top: 0;
+    background-color: black;
+    /*Efecto de Glassmorphismo*/
+    opacity: .68;
+    display: none;
+}
+
+.show-overlay {
+    display: block;
+}
+
+.menu-opened {
+    animation: fade 1s ease-in forwards, slide-left .5s ease-in-out;
+    transition: all .4s ease-in;
+    display: flex;
+}
+
+.menu-closed {
+    transition: all .5s ease-in-out;
+}
+
+@keyframes slide-left {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(0%);
+    }
+}
+
+.quantity-handler:hover {
+    background-color: grey;
+    color: white;
+}

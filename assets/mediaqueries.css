@@ -1,0 +1,114 @@
+@media (max-width:1200px) {
+    .products-container {
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 992px) {
+
+    /* Header */
+    /* Menú hamburguesa */
+    .menu-label {
+        display: flex;
+        cursor: pointer;
+        order: 2;
+    }
+
+    .nav-list {
+        display: none;
+        background-color: white;
+        position: absolute;
+        flex-direction: column;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 300px;
+        justify-content: initial;
+        gap: 0;
+        z-index: 2;
+        padding-left: 0;
+    }
+
+    .nav-list a {
+        color: black;
+        padding: 0 48px 0 24px;
+        font-size: 16px;
+        line-height: 44px;
+        font-weight: normal;
+    }
+
+    .menu-closed {
+        transform: translateX(100%);
+    }
+
+    .show-menu,
+    .nav-close-container {
+        display: flex;
+    }
+
+    .header-nav {
+        gap: 20px;
+    }
+
+    .cart {
+        right: 3.9rem;
+    }
+
+    /* Hero */
+
+    #hero-phones-img {
+        display: none;
+    }
+
+    .hero-first-column {
+        padding-top: 0;
+    }
+
+    /* Features */
+
+    .features-container {
+        flex-direction: column;
+    }
+
+    /* Contact */
+    .contact-section {
+        display: block;
+    }
+
+    .contact-section img {
+        display: none;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .container {
+        max-width: 850px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .header-nav {
+        gap: 0.2rem;
+    }
+
+    .container {
+        max-width: 600px;
+    }
+
+    .card {
+        max-width: 250px;
+        /* min-height: 420px; */
+    }
+
+    .card img {
+        width: 150px;
+        justify-content: center;
+    }
+
+    footer .row {
+        flex-direction: column;
+        gap: 20px;
+    }
+}

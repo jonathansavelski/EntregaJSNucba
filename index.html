@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TechHaven</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/styles.css">
+    <link rel="stylesheet" href="/assets/mediaqueries.css">
+    <link rel="stylesheet" href="assets/animaciones.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header id="header">
+        <img src="/assets/img/white-logo.png" alt="" class="logo">
+        <nav class="header-nav">
+            <div class="menu-label">
+                <img src="./assets/img/menu.png" alt="menu icon" />
+            </div>
+            <div class="nav-container">
+                <ul class="nav-list menu-closed">
+                    <div class="nav-close-container">
+                        <button type="button" class="btn-close nav-close-icon" aria-label="Close"></button>
+                    </div>
+                    <li><a class="nav-link" href="#hero">Home</a></li>
+                    <li><a class="nav-link" href="#features">Features</a></li>
+                    <li><a class="nav-link" href="#products">Products</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+            <div class="cart-label">
+                <i class="fa-solid fa-cart-shopping cart-icon">
+                    <div class="cart-bubble">0</div>
+                </i>
+            </div>
+
+            <div class="cart">
+                <div class="cart-triangle"></div>
+                <h2>Tu carrito</h2>
+                <div class="cart-container">
+                    <!-- Rendered with js -->
+                </div>
+
+                <div class="cart-total">
+                    <p>Total:</p>
+                    <span class="total">1</span>
+                </div>
+                <button class="btn-checkout btn btn-primary btn-lg">Proceed to checkout</button>
+            </div>
+
+            <div class="overlay"></div>
+        </nav>
+    </header>
+
+    <main id="main">
+        <!-- Hero section -->
+        <section class="container col-xxl-8 px-4 py-5" id="hero">
+            <div class="row flex-lg-row-reverse g-5 py-5">
+                <div class="col-10 col-sm-8 col-lg-6 hero-second-column">
+                    <img src="/assets/img/hero-phones-2.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes"
+                        width="700" height="500" loading="lazy">
+                    <img src="/assets/img/hero-phones.jpg" alt="phones" id="hero-phones-img">
+                </div>
+                <div class="col-lg-6 hero-first-column">
+                    <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Your Ultimate Destination for
+                        Cutting-Edge Electronics</h1>
+                    <p class="lead">Explore a world of innovation and style with our handpicked collection of top-notch
+                        mobile devices and accessories. From the latest smartphones that redefine connectivity to sleek
+                        protective cases that complement your lifestyle, we're here to enhance your tech experience.</p>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                        <a class="btn btn-primary btn-lg px-4 me-md-2" href="#products">Our products</a>
+                        <a class="btn btn-outline-secondary btn-lg px-4" href="#contact">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features section -->
+        <section class="container px-4 py-5" id="features">
+            <h2 class="pb-2 border-bottom">Empowering Your Tech Discovery</h2>
+
+            <div class="row align-items-md-center g-5 features-container">
+                <div class="col d-flex flex-column align-items-start gap-2">
+                    <h3 class="fw-bold text-body-emphasis">Experience the Next Level of Tech Shopping</h3>
+                    <p class="text-body-secondary">Explore a range of innovative features that elevate your shopping
+                        journey. From our Extended Warranty Assurance, ensuring your devices stay protected, to our
+                        dedicated Tech Expert Support, ready to guide you every step of the way. Our Fast and Secure
+                        Checkout streamlines the process, making your purchase a breeze. And with our Personalized
+                        Recommendations, finding your ideal tech companions has never been easier.</p>
+                    <a href="#products" class="btn btn-primary btn-lg">Our products</a>
+                </div>
+
+                <div class="col">
+                    <div class="row row-cols-1 row-cols-sm-2 g-4">
+                        <div class="col d-flex flex-column gap-2">
+                            <div
+                                class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 rounded-3">
+                                <i class="fa-solid fa-house-chimney-crack"></i>
+                            </div>
+                            <h4 class="fw-semibold mb-0 text-body-emphasis">Extended Warranty Assurance</h4>
+                            <p class="text-body-secondary">Enjoy peace of mind with our extended warranty coverage,
+                                ensuring your tech investments are protected for the long run.</p>
+                        </div>
+
+                        <div class="col d-flex flex-column gap-2">
+                            <div
+                                class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+                                <i class="fa-solid fa-circle-info"></i>
+                            </div>
+                            <h4 class="fw-semibold mb-0 text-body-emphasis">Tech Expert Support Service</h4>
+                            <p class="text-body-secondary">Access our dedicated team of tech experts who are ready to
+                                assist you with any product-related queries or troubleshooting.</p>
+                        </div>
+
+                        <div class="col d-flex flex-column gap-2">
+                            <div
+                                class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+                                <i class="fa-solid fa-lock"></i>
+                            </div>
+                            <h4 class="fw-semibold mb-0 text-body-emphasis">Fast and Secure Checkout</h4>
+                            <p class="text-body-secondary">Experience a seamless shopping journey with our quick and
+                                secure checkout process, making your online purchases hassle-free.</p>
+                        </div>
+
+                        <div class="col d-flex flex-column gap-2">
+                            <div
+                                class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+                                <i class="fa-solid fa-user"></i>
+                            </div>
+                            <h4 class="fw-semibold mb-0 text-body-emphasis">Personalized Recommendations</h4>
+                            <p class="text-body-secondary">Discover products tailored to your preferences through our
+                                personalized recommendation system, making it easier than ever to find the perfect tech
+                                companions.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Products section -->
+
+        <section id="products" class="container px-4 py-5">
+            <h2 class="pb-2 border-bottom">Our products</h2>
+            <div class="categories">
+                <button class="category btn btn-sm btn-outline-secondary px-3 active">All</button>
+                <button class="category btn btn-sm btn-outline-secondary px-3" data-category="phones">Phones</button>
+                <button class="category btn btn-sm btn-outline-secondary px-3" data-category="cases">Cases</button>
+                <button class="category btn btn-sm btn-outline-secondary px-3"
+                    data-category="chargers">Chargers</button>
+                <button class="category btn btn-sm btn-outline-secondary px-3" data-category="gift-cards">Gift
+                    Cards</button>
+            </div>
+
+            <div class="products-container">
+                <!-- Rendered with JS -->
+            </div>
+
+            <div class="btn-view-more-container">
+                <button type="button" class="btn btn-primary btn-lg px-4 btn-show-more">Show more</button>
+            </div>
+        </section>
+
+
+
+
+        <!-- Contact section -->
+        <section class="container px-4 py-5" id="contact">
+            <h2 class="pb-2 border-bottom">Contact</h2>
+            <div class="contact-section">
+                <div>
+                    <img src="/assets/img/contact.jpg" alt="">
+                </div>
+                <div>
+                    <div>
+                        <h3>Assistance needed? We are here to help you</h3>
+                    </div>
+                    <div>
+                        <form class="form-container" id="contact-form">
+                            <div class="mb-3 form-field">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="name" placeholder="John Doe">
+                                <small></small>
+                            </div>
+                            <div class="mb-3 form-field">
+                                <label for="email" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                                <small></small>
+                            </div>
+                            <div class="mb-3 form-field">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control" id="message" rows="3"></textarea>
+                                <small></small>
+                            </div>
+                            <button type="submit" type="button"
+                                class="btn btn-primary btn-lg px-4 me-md-2">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <footer class="py-5">
+                <div class="row">
+                    <div class="col-6 col-md-2 mb-3">
+                        <h5>About us</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="#features"
+                                    class="nav-link p-0 text-body-secondary">Features</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="#contact"
+                                    class="nav-link p-0 text-body-secondary">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-6 col-md-4 mb-3">
+                        <h5>Products</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="#products"
+                                    class="nav-link p-0 text-body-secondary">Phones</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="#products"
+                                    class="nav-link p-0 text-body-secondary">Cases</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="#products"
+                                    class="nav-link p-0 text-body-secondary">Chargers</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-4 offset-md-2 mb-3">
+                        <h5>Subscribe to our newsletter</h5>
+                        <p>Get the Latest Tech Trends and Exclusive Offers!</p>
+                        <form id="subscribe-form">
+                            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                                <div class="subscribe-form-container form-field">
+                                    <label for="newsletter" class="visually-hidden">Email address</label>
+                                    <input id="newsletter" type="email" class="form-control"
+                                        placeholder="Email address">
+                                    <small></small>
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-newsletter"
+                                    type="button">Subscribe</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+                    <p>&copy; 2023 TechHaven, Inc. All rights reserved.</p>
+                </div>
+            </footer>
+
+            <form action="" id="hola">
+
+            </form>
+
+            <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+            <script src="assets/data.js"></script>
+            <script src="assets/index.js"></script>
+            <script src="assets/contact-form.js"></script>
+
+</body>
+
+</html>

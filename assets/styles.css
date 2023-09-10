@@ -1,0 +1,335 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+header {
+    background-color: black;
+    padding: 10px 0;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 65px;
+    padding: 0px 30px 0px 30px;
+    margin: 0 auto;
+    transition-duration: 0.5s;
+    z-index: 1;
+    caret-color: transparent;
+}
+
+.gradient {
+    background-color: blue;
+    transition-duration: 0.5s;
+    height: 65px;
+    top: 0;
+}
+
+.logo {
+    width: 200px;
+    height: fit-content;
+}
+
+.header-nav,
+.nav-list {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 0;
+}
+
+.header-nav {
+    gap: 150px;
+}
+
+.nav-list {
+    gap: 30px;
+    z-index: 2;
+}
+
+.nav-close-container {
+    text-decoration: none;
+    display: flex;
+    justify-content: right;
+    padding: 2rem 2rem 0 0;
+    font-size: 20px;
+    display: none;
+}
+
+.nav-close-container i {
+    cursor: pointer;
+    color: black;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.cart-icon {
+    font-weight: 600;
+    border-radius: 10px;
+    font-size: 18px;
+    margin-right: 1rem;
+    color: white;
+    cursor: pointer;
+    position: relative;
+}
+
+.cart-bubble {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    text-align: center;
+    background: blue;
+    color: white;
+    font-size: 10px;
+    font-weight: 500;
+    height: 18px;
+    width: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 1px;
+    border-radius: 50%;
+}
+
+.bubble-black {
+    background: black;
+}
+
+.menu-label {
+    display: none;
+    cursor: pointer;
+}
+
+.menu-label img {
+    height: 20px;
+}
+
+.cart {
+    display: none;
+    flex-direction: column;
+    background-color: white;
+    top: 70px;
+    right: 20px;
+    width: 300px;
+    justify-content: initial;
+    gap: 20px;
+    padding-left: 0;
+    position: absolute;
+    padding: 1rem;
+    box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.cart-triangle {
+    width: 0;
+    height: 0;
+    border-right: 20px solid transparent;
+    border-bottom: 20px solid white;
+    border-left: 20px solid transparent;
+    position: absolute;
+    top: -15px;
+    right: 15px;
+}
+
+.show-cart {
+    display: flex;
+}
+
+/* Hero */
+#hero {
+    display: flex;
+    gap: 10rem;
+    caret-color: transparent;
+}
+
+.py-5 {
+    padding-top: 0 !important;
+    /* padding-bottom: 0 !important; */
+}
+
+.hero-first-column {
+    padding-top: 10rem;
+}
+
+.hero-second-column {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+#hero-phones-img {
+    height: 300px;
+}
+
+/* Cart */
+.cart-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.cart-card {
+    display: flex;
+    flex-direction: row;
+    padding: 0.5rem;
+    gap: 10px;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.cart-card-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-card-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.cart-card-img {
+    height: 70px;
+}
+
+.cart-card-title {
+    font-size: 16px;
+}
+
+.quantity-handler {
+    border: 1px solid grey;
+    border-radius: 15px;
+    padding: 0 3px;
+    cursor: pointer;
+}
+
+
+/* Features */
+.feature-icon-small {
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#features h2 {
+    margin-bottom: 3rem;
+}
+
+/* Products */
+
+#products {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.categories {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.btn-view-more-container {
+    display: flex;
+    justify-content: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.products-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.card-product {
+    padding: 2rem 1rem 1rem 1rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.card-price {
+    font-size: 20px;
+}
+
+.btn.active {
+    border-bottom: 3px solid blue;
+}
+
+/* Contact */
+
+#contact h2 {
+    margin-bottom: 3rem;
+}
+
+.contact-section {
+    display: flex;
+    gap: 5rem;
+}
+
+.contact-section img {
+    width: 500px;
+}
+
+/* Footer */
+footer {
+    padding-top: 5rem;
+}
+
+footer .py-5 {
+    padding-bottom: 0 !important;
+}
+
+/* Messages */
+button.swal2-confirm.swal2-styled {
+    background: blue;
+}
+
+/* Form */
+.form-field.error input,
+.form-field.error textarea {
+    border: 1px solid #dc3545;
+}
+
+.form-field small {
+    color: #dc3545;
+    max-width: 350px;
+    text-align: left;
+    display: none;
+}
+
+.form-field.success input,
+.form-field.success textarea {
+    border: 1px solid #28a745;
+}
+
+.btn-newsletter {
+    height: 38px;
+}
