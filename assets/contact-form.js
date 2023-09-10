@@ -105,7 +105,7 @@ const validateForm = (e) => {
 
     let isNameValid = checkNameInput(nameInput);
     let isEmailValid = checkEmail(emailInput);
-    let isMessageValid = checkNameInput(messageInput);
+    let isMessageValid = checkMessageInput(messageInput);
 
     let isValidForm =
         isNameValid &&
