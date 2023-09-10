@@ -131,12 +131,14 @@ const validateSubscribeForm = (e) => {
     let isSubscribeEmailValid = checkEmail(subscribeInput);
 
     if (isSubscribeEmailValid) {
-        Swal.fire(
-            'Thank you!',
-            'You subscribed to our newsletter successfully',
-            'success'
-        )
-        subscribeForm.reset();
+        setTimeout(() => {
+            Swal.fire(
+                'Thank you!',
+                'You subscribed to our newsletter successfully',
+                'success'
+            )
+            subscribeForm.reset();
+        }, 500);
     }
 }
 
